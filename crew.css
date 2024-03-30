@@ -206,19 +206,12 @@ h2 span{
 }
 
 .attribution{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
+    font-size: 12px;
     text-align: center;
     width: 100%;
-    color: rgba(255, 255, 255, 1);
-    font-size: 12px;
-    font-family: sans-serif;
- }
-
-
-
+    color: #FFF;
+    padding: 1.5rem 20px;
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
 
@@ -228,7 +221,7 @@ h2 span{
     body{
         background-image: url("./assets/crew/background-crew-tablet.jpg");
         background-size: cover;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .logo svg{
