@@ -1,0 +1,444 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+    --logo-fillcircle: #FFF;
+    --logo-fillpath: #0B0D17;
+
+    --nav-numb-color: rgba(226, 233, 237, 1);
+    --nav-home-dest-etc: rgba(220, 231, 248, 1);
+    --introcolor: rgba(176, 179, 195, 1);
+    --explore-container: rgba(255, 255, 255, 1);
+    --space: rgba(255, 255, 255, 1);
+    --explore: rgba(36, 37, 41, 1);
+    --color1-nav: rgba(19, 21, 34, 1);
+}
+
+body{
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo{
+    position: relative;
+    padding-left: 5%;
+}
+
+.logo svg path{
+    fill: rgba(11, 13, 23, 1);
+}
+
+.logo svg circle{
+    fill: rgba(255, 255, 255, 1);
+}
+
+hr{
+    width: 900px;
+    position: relative;
+    left: 50px;
+    z-index: 2;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 80px;
+    width: auto;
+    background: #ffffff0a;
+    backdrop-filter: blur(40.774227142333984px);
+    align-items: center;
+    padding: 0 70px;
+}
+
+.menu b{
+    margin-right: 15px;
+}
+
+.menu button{
+    width: auto;
+    height: 75px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu button a{
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    height: 75px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.menu button:hover{
+    border-bottom: solid 3px wheat;
+    border-top: solid 3px transparent;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+main{
+    /* margin-top: 100px; */
+    padding: 0 80px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+.main_content_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+
+
+#sp_lunch_no{
+    text-transform: uppercase;
+    font-size: 30px;
+    width: auto;
+    margin-top: 40px;
+    font-family: BarlowCondensed;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    letter-spacing: 4.728px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.text_container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.button_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.button_container button{
+    background: none;
+    color: white;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 2.125rem;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+
+.button_container button:hover{
+    cursor: pointer;
+    background: white;
+    color: var( --explore);
+}
+
+#technology{
+    padding-bottom: 10px;
+    color: rgba(208, 214, 249, 1);
+    font-family: BarlowCondensed;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 2.716px;
+    text-align: left;
+}
+
+#term{
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64.18px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+ p{
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: rgba(208, 214, 249, 1);
+    width: 300px;
+ }
+
+ h2{
+    color: white;
+ }
+
+ .attribution{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #FFF;
+ }
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    body{
+        background-image: url("./assets/technology/background-technology-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: auto;
+    }
+
+    
+    hr{
+        display: none;
+    }
+
+    header{
+        width: 100vw;
+    }
+
+    .menu{
+        width: auto;
+        padding: 0 2rem;
+    }
+
+    .menu button a b{
+        display: none;
+    }
+
+    .menu button a{
+        font-size: 1.5rem;
+    }
+
+    #sp_lunch_no{
+        margin-top: 0;
+        padding-left: 5%;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    main{
+        padding: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .main_content_container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .text_container{
+        margin-top: 20px;
+        width: 80%;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .pics_container{
+        width: 80%;
+    }
+
+    .pics_container img{
+        width: 100%;
+        height: 100%;
+    }
+    .text{
+        align-self: flex-start;
+        width: 60%;
+    }
+
+    #technology{
+        font-size: 1.5rem;
+    }
+
+    #details{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+ }
+
+ @media(max-width: 375px){
+   
+   
+    body{
+        background-image: url("./assets/technology/background-technology-mobile.jpg");
+    }
+
+    .logo{
+        padding-left: 0;
+    }
+
+    header{
+        width: 100vw;
+        padding: 20px 20px;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(19, 21, 34, 1);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        position: absolute;
+        width: 80%;
+        height: 250px;
+        row-gap: 1.125rem;
+        border-radius: 23px;
+    }
+
+    .menu button a b{
+        display: none;
+    }
+    .show{
+        display: flex;
+    }
+
+    nav button span{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .three_bar{
+        display: block;
+    }
+
+    .close_icon{
+        display: none;
+    }
+
+    .showInline{
+        display: block;
+    }
+
+    .shutOut{
+        display: none;
+    }
+
+    main{
+        width: 375px;
+        padding: 20px;
+        height: auto;
+    }
+
+    #sp_lunch_no{
+        text-align: center;
+        z-index: -999;
+    }
+
+    #sp_lunch_no{
+        margin-top: 0;
+    }
+
+    .main_content_container{
+        flex-direction: column-reverse;
+        width: 335px;
+        height: auto;
+    }
+
+    .pics_container{
+        margin-top: 15px;
+        width: 335px;
+        height: 250px;
+    }
+
+    .pics_container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .text_container{
+       flex-direction: column;
+    }
+
+    .button_container{
+        flex-direction: row;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .button_container button{
+        height: 40px;
+        width: 40px;
+        font-size: 1.125rem;
+    }
+
+    #technology{
+        font-size: 14px;
+        text-align: center;
+        padding: 0;
+    }
+
+    #term{
+        font-size: 20px;
+        text-align: center;
+        height: 64px;
+        padding-bottom: 1rem;
+    }
+
+    #details{
+        text-align: center;
+        width: 100%;
+    }
+
+    .attribution{
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    
+ }

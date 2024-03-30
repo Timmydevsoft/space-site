@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo{
+    position: relative;
+    padding-left: 5%;
+}
+
+.logo svg path{
+    fill: rgba(11, 13, 23, 1);
+}
+
+.logo svg circle{
+    fill: rgba(255, 255, 255, 1);
+}
+
+hr{
+    width: 900px;
+    position: relative;
+    left: 50px;
+    z-index: 2;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 80px;
+    width: auto;
+    background: #ffffff0a;
+    backdrop-filter: blur(40.774227142333984px);
+    align-items: center;
+    padding: 0 70px;
+}
+
+.menu b{
+    margin-right: 15px;
+}
+
+.menu button{
+    width: auto;
+    height: 75px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu button a{
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    height: 75px;
+    text-transform: uppercase;
+}
+
+.menu button:hover{
+    border-bottom: solid 3px wheat;
+    border-top: solid 3px transparent;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+main{
+    padding: 150px;
+}
+
+.home_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+
+.introduction{
+    width: 450px;
+    height: 382px;
+    padding: 0px, 5px, 0px, 0px;
+}
+
+#first_paragraph{
+    color: #FFF;
+    font-size: 25px;
+}
+
+h1{
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#home_p2{
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: 450px;
+    height: 450px;
+    border: solid 88px transparent;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* .explore{
+    width: 450px;
+} */
+
+.explore:hover{
+    width: 450px;
+    height: 450px;
+    background: #0B0D17;
+    cursor: pointer;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.explore button{
+    width: 274px;
+    height: 274px;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    color: #0B0D17;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    border-radius: 50%;
+}
+
+.attribution{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    body{
+        width: 768px;
+        height: 1024px;
+        background-image: url("./assets/home/background-home-tablet.jpg");
+    }
+
+    header{
+        width: 100vw;
+    }
+
+    .logo svg{
+        left: 39px;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .menu{
+        width: auto;
+        padding: 0 2rem;
+    }
+
+    .menu button a b{
+        display: none;
+    }
+
+    .menu button a{
+        font-size: 1.5rem;
+    }
+
+    main{
+        padding: 30px;
+        width: 100vw;
+    }
+
+    .home_section{
+        flex-direction: column;
+        justify-content: none;
+        margin-top: 5rem;
+    }
+
+    .introduction{
+        width: 100%;
+    }
+
+    h1{
+        width: 100%;
+        height: 150px;
+        font-family: Bellefair;
+        font-size: 150px;
+        font-weight: 400;
+        line-height: 150px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
+    #home_p2{
+        width: 100%;
+        height: 112px;
+        font-family: Barlow;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .explore{
+        width: 500px;
+        height: 500px;
+        border: solid 50px transparent;
+        margin-top: 2rem;
+    }
+
+    .explore button{
+        width: 450px;
+        height: 450px;
+    }
+   
+}
+
+@media (max-width: 420px){
+
+    html{
+        width: 100%;
+    }
+    
+    body{
+        background-image: url("./assets/home/background-home-mobile.jpg");
+        width: 100vw;
+    }
+
+    header{
+        width: 100%;
+        padding: 20px 20px;
+        position: relative;
+    }
+
+    .logo{
+        padding: 0;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 8px;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        width: 80%;
+        height: 250px;
+        padding: 2rem;
+        row-gap: 1.125rem;
+        top: 4.5rem;
+    }
+
+    .menu b{
+        display: none;
+    }
+
+    .menu a{
+        text-align: left;
+    }
+
+    /*HAMBURGER RESPONSIVENESS STARTS HERE*/
+
+    .showMenu{
+        display: flex;
+    }
+
+    .hamburger{
+        display: inline;
+    }
+    .three_bar{
+        display: inline;
+    } 
+
+    .close_icon{
+        display: none;
+        z-index: 2;
+    }
+
+    .showAnything{
+        display: inline;
+    }
+
+    .hide_anything{
+        display: none;
+    } 
+
+
+    /*IT STOPS HERE*/
+
+
+    hr{
+        display: none;
+    }
+
+    .logo svg{
+        position: relative;
+        left: 0;
+    }
+
+    .menu button{
+        width: auto;
+        height: 50px;
+    }
+
+    main{
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .home_section{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction{
+        height: auto;
+        width: 100%;
+    }
+
+    #first_paragraph{
+        text-align: center;
+    }
+
+    h1{
+        font-size: 110px;
+        text-align: center;
+    } 
+
+    #home_p2{
+        margin: 0 auto;
+        text-align: center;
+        width: 320px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .explore{
+        width:300px;
+        height: 300px;
+        border: solid 50px transparent;
+    }
+
+    .explore:hover{
+        width: 250px;
+        height: 250px;
+        background: #0B0D17;
+    }
+
+    .explore button{
+       width: 250px;
+       height: 250px;
+    }
+
+    .attribution{
+        bottom: -1.5rem;
+        padding: 0 20px;
+    }
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="destination.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill=""/><path fill="" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+    </div>
+
+    <hr>
+
+    <nav class="menu">
+
+      <button>
+        <a href="index.html"><b>00</b>Home
+        </a>
+      </button>
+      <button>
+        <a href="destination.html"><b>01</b>Destination</a>
+      </button>
+      <button>
+        <a href="crew.html"><b>02</b>Crew</a>
+      </button>
+      <button>
+        <a href="technology.html"><b>03</b>Technology</a>
+      </button>
+    </nav>
+
+    <div class="hamburger">
+      <svg class="threeLines" width="40" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 12h40v3H0zM0 24h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+      <svg class="close_symbol" width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>
+    </div>
+    
+  </header>
+
+  <main>
+    <p id="pick_dest"><span>01 </span>Pick your destination</p>
+    <section class="main_content_container">
+      <div class="planet_div">
+        <img id="planet_image" src="./assets/destination/image-moon.webp">
+      </div>
+
+      <div class="text-section">
+        <div class="nav_container">
+          <button class="planets A"> Moon</button>
+          <button class="planets B">Mars</button>
+          <button class="planets C">Europa</button>
+          <button class="planets D">Titan</button>
+        </div>
+
+        <div class="text_content">
+          <h1 class="planet">Europa</h1>
+          <p class="required_kit">d  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+            ice skating, curling, hockey, or simple relaxation in your snug 
+            wintery cabin.
+          </p>
+          <!-- <hr id="contrnt_line">   -->
+        </div>
+       
+
+        <div class="details">
+          <div class="dispance">
+            <span>Avg. distance</span>
+            <span id="distance_value">628 mil.</span>
+          </div>
+
+          <div class="time">
+            <span> Est. travel time</span>
+            <span id="time_value">3 years</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Olasunkanmi Oluwatimileyin</a>.
+</p> 
+  <script src="destination.js"></script>
+</body>
+</html>

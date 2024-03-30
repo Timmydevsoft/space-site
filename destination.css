@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    align-self: center;
+    padding-left: 5%;
+    border: none;
+}
+
+.logo svg path{
+    fill: rgba(11, 13, 23, 1);
+}
+
+.logo svg circle{
+    fill: rgba(255, 255, 255, 1);
+}
+
+hr{
+    color: wheat;
+    width: 900px;
+    opacity: 0.25px;
+    position: relative;
+    left: 50px;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: auto;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+    padding: 0 70px;
+}
+
+nav b{
+    margin-right: 15px;
+}
+
+nav button{
+    height: 80px;
+    background: none;
+    border: none;
+    height: 75px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    height: 75px;
+    text-transform: uppercase;
+}
+
+nav button:hover{
+    border-bottom: solid 3px rgba(255, 255, 255, 1);
+    border-top: solid 3px transparent;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+main{
+    padding: 40px 40px  120px 80px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#sp_lunch_no{
+    font-family: 'Barlow Condensed';
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 4.7px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+#pick_dest{
+    width: 328px;
+    height: 34px;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    line-height: 33px;
+    letter-spacing: 4.724999904632568px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+#pick_dest span{
+    color: var(--introcolor);
+}
+
+.main_content_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 472px;
+    flex-shrink: 0;
+}
+
+.text-section{
+    height: 445px;
+}
+
+.nav_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.planets{
+    font-family: BarlowCondensed;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 2.700000047683716px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    background: none;
+    border: none;
+    width: auto;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px transparent;
+}
+
+.planets:hover{
+    border-bottom: solid 3px rgba(255, 255, 255, 1);
+    cursor: pointer;
+    border-bottom: solid 1px  rgba(255, 255, 255, 1);
+}
+
+
+
+.planet{
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.required_kit{
+    color: rgba(208, 214, 249, 1);
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 444px;
+}
+
+#contrnt_line{
+    width: 444px;
+    height: 1px;
+    color: rgba(56, 59, 75, 1);
+}
+
+.details{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    align-items: center;
+    border-top: solid 1.5px rgba(56, 59, 75, 1);
+    padding: 20px 0;
+}
+
+.dispance,
+.time{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    row-gap: 15px;
+}
+
+.dispance span:nth-child(1),
+.time span:nth-child(1){
+    font-family: 'Barlow Condensed';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    color: rgba(208, 214, 249, 1);
+
+} 
+
+#distance_value,
+#time_value{
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.attribution{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("./assets/destination/background-destination-tablet.jpg");
+        background-size: cover;
+    }
+
+    
+
+    .logo svg{
+        left: 39px;
+    }
+
+    
+    hr{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    nav{
+        width: auto;
+        padding: 0 2rem;
+    }
+
+    nav button a{
+        font-size: 1.5rem;
+    }
+
+    nav button a b{
+        display: none;
+    }
+
+    main{
+        margin: 0 auto;
+        padding: 30px;
+        width: 100vw;
+    }
+
+    #pick_dest{
+        font-size: 1.125rem;
+        width: 100%;
+    }
+
+    .main_content_container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .text-section{
+        width: 100%;
+    }
+
+    .planet_div{
+        height: 550px;
+        width: 550px;
+    }
+
+    .planet_div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav_container{
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    .nav_container button{
+        font-size: 1.5rem;
+    }
+
+    
+    .text_content{
+        margin: 0 auto;
+    }
+
+    .planet{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .required_kit{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .details{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 420px){
+
+    html{
+        width: 100%;
+        height: auto;
+    }
+
+    body{
+        background-image: url("./assets/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        width: 375px;
+        height: fit-content;
+        /* padding: 0 20px; */
+    }
+
+    header{
+        width: auto;
+        padding: 20px 20px;
+        width: 100vw;
+    }
+
+    .logo{
+        padding: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 80%;
+        top: 4.5rem;
+        row-gap: 1.125rem;
+        height: 250px;
+        border-radius: 23px;
+        padding: 2rem;
+    }
+
+    .menu button a b{
+        display: none;
+    }
+
+    nav button{
+        height: 40px;
+    }
+    .hamburger{
+        display: block;
+        z-index: 2;
+    }
+
+    .threeLines{
+        display: block;
+    }
+
+    .close_symbol{
+        display: none;
+    }
+
+    .dIsPlAy{
+        display: block;
+    }
+
+    .close{
+        display: none
+    }
+
+    .show-Menu{
+        display: flex;
+    }
+
+    main{
+        padding: 20px;
+        width: 100vw;
+    }
+
+    #pick_dest{
+        width: 100%;
+        text-align: center;
+        line-height: 2 rem;
+        letter-spacing: 3px;
+    }
+
+    .main_content_container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width: 100%;
+    }
+
+    .planet_div{
+        width: 200px;
+        height: 200px;
+    }
+
+    .planet_div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    .text-section{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav_container{
+        justify-content: center;
+    }
+    
+    .text_content{
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .required_kit{
+        width : 100%;
+        text-align: center;
+    }
+
+    .details{
+        margin-top: 20px;
+    }
+
+    .dispance span:nth-child(1),
+    .time span:nth-child(1){
+        font-size: 1rem;
+    }
+
+    #distance_value,
+    #time_value{
+        font-size: 1.125rem;
+    }
+
+    .attribution{
+        bottom: -9.5rem;
+        padding: 0 20px;
+    }
+
+    
+    
+
+}
