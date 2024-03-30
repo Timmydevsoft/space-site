@@ -64,7 +64,7 @@ fetch("./data.json")
             e.currentTarget.style.backgroundColor = "white";
             const verify = e.currentTarget.classList;
             if (verify.contains("A")){
-                crewId .innerHTML = data["crew"][0]["id"];
+               
                 engnrName.innerHTML = data["crew"][0]["name"];
                 crew_role.innerHTML = data["crew"][0]["role"];
                 details.innerHTML = data["crew"][0]["bio"];

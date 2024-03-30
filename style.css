@@ -15,6 +15,7 @@ body{
     background-image: url("./assets/home/background-home-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
 }
 
 
@@ -174,21 +175,18 @@ h1{
 }
 
 .attribution{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 3rem;
     font-size: 12px;
     text-align: center;
     width: 100%;
     color: #FFF;
+    padding: 1.5rem 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
     
     body{
         width: 768px;
-        height: 1024px;
+        height: auto;
         background-image: url("./assets/home/background-home-tablet.jpg");
     }
 
@@ -407,11 +405,6 @@ h1{
     .explore button{
        width: 250px;
        height: 250px;
-    }
-
-    .attribution{
-        bottom: -1.5rem;
-        padding: 0 20px;
     }
 }
 
